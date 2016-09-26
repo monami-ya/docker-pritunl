@@ -13,4 +13,6 @@ if [ ! -z "$MONGO_URI" ]; then
 fi
 
 # Start
-pritunl start
+pritunl start --daemon
+
+tail -f /var/log/pritunl.log
